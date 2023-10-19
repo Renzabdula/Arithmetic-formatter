@@ -23,7 +23,7 @@ def arithmetic_arranger(problems, solve=False):
     operator = problem.split(" ")[1]
     secondNumber = problem.split(" ")[2]
 
-    if (len(firstNumber) >= 5 or len(secondNumber) >= 4):
+    if (len(firstNumber) >= 5 or len(secondNumber) >= 5):
       return "Error: Numbers cannot be more than four digits"
 
     sum = ""
