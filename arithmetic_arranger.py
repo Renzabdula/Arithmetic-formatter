@@ -14,7 +14,7 @@ def arithmetic_arranger(problems, solve=False):
     return "Error: Too many problems."
 
   for problem in problems:
-    if (re.search("[^/s0-9.+-]", problem)):
+    if (re.search("[^\s0-9.+-]", problem)):
       if (re.search("[/]", problem) or re.search("[*]", problem)):
         return "Error: operators must be '+' or '-'."
       return "Error: Numbers must only contain digits."
